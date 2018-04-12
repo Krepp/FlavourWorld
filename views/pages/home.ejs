@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"/>
     <link rel="stylesheet" href="../css/leaflet-geojson-selector.css" />
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   </head>
 
   <body>
@@ -21,8 +22,8 @@
 
 <!-- HEADER STARTS -->
 
-  <header class="custom-grid-container">
-    <div>
+  <header class="container">
+    <div class='row'>
       <a href="home.html"  id="logoLink">
         <img src="../images/logo.png" id="logoImage">
       </a>
@@ -32,8 +33,8 @@
 
 <!-- MAIN STARTS -->
 
-  <main id="Page" class="grid-container">
-    <div id="optionsBar">
+  <main id="Page" class="container">
+    <div id="optionsBar" class = "row">
       <button class="sideButton" onclick="menu_toggle()">☰</button>
       <button class="loginButton" onclick="login_menu()">Profile</button>
       <div class="profileMenu">
@@ -49,7 +50,7 @@
       </div>
      </div>
 
-    <div class="sidebarContainer grid-30 mobile-grid-100" id="sidebar">
+    <div class="col-sm" id="sidebar">
       <h4 id="dietary">Dietary Restrictions</h4>
        <div class="Dietary">
           <button>
@@ -132,7 +133,7 @@
 
 <!--MAP IMAGE-->
 
-    <div class="mapContainer grid-70 mobile-grid-100" id="mapid">
+    <div class="mapContainer col-large" id="mapid">
       <!-- <img src="../images/map.png" id="interactivemap"> -->
       <!-- Map goes here -->
     </div>
@@ -141,8 +142,8 @@
 
 <!-- FOOTER STARTS -->
 
-    <footer id="PageFooter" class="custom-grid-container">
-      <div class="grid-100">
+    <footer id="PageFooter" class="container">
+      <div class="row">
           <a href="legal.html"><button>Legal</button></a>
           <a href="about.html"><button class="middleButton">About</button></a>
           <a href="contact.html"><button>Contact</button></a>
